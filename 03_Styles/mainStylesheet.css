@@ -1,0 +1,30 @@
+/* Import restliche Stylesheets */
+@import url('../03_Styles/basicStylesheetMobile.css') screen and (max-width: 480px);
+@import url('../03_Styles/additionalSytelsheetMobile.css') screen and (max-width: 480px);
+@import url('../03_Styles/basicStylesheetDesktop.css') screen and (min-width: 481px);
+
+/* Einbindung der Schriftart */
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../01_Assets/03_Font/Inter-Regular.ttf') format('truetype');
+}
+
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-size: 1rem;
+    font-family: Inter-Regular;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}

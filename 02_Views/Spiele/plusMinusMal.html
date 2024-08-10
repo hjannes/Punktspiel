@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Minus Mal</title>
+
+    <link rel="stylesheet" href="../../03_Styles/mainStylesheet.css">
+    <script src="../../04_JavaScript/main.js" defer></script>
+    
+</head>
+<body onload="inputScores()">
+    <header class="content-header">
+        <nav>
+            <a href="../Spiele/wahlSpieler/plusMinusMal.html"> <img src="../../01_Assets/02_Icons/chevron-left.svg" alt="chevron left" width="30"> </a>
+            <a href="#"> <img src="../../01_Assets/02_Icons/list.svg" alt="Menu" width="30"></a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img id="individualAvatar" alt="Avatar" width="150">
+                </div>
+            </div>
+
+            <div class="avatar-container">
+                <div class="avatar-name">
+                    <p id="playersName"></p>
+                </div>
+            </div>
+            
+            <h1>
+                Spielzüge:
+            </h1>
+
+            <div>
+                <form action="../Spiele/wahlSpieler/plusMinusMal.html">
+                    <label for="zug1"></label>
+                    <input type="number" name="zug1" id="zug1" min="1" max="10" placeholder="0" required class="input-spielzug">
+
+                    <label for="zug2"></label>
+                    <input type="number" name="zug2" id="zug2" min="1" max="10" placeholder="0" required class="input-spielzug">
+
+                    <label for="zug3"></label>
+                    <input type="number" name="zug3" id="zug3" min="0" max="10" placeholder="0" required class="input-spielzug">
+
+                    <label for="zug4"></label>
+                    <input type="number" name="zug4" id="zug4" min="1" max="10" placeholder="0" required class="input-spielzug">
+
+                    <div class="placeholder-s"></div>
+                    <button type="submit" class="button button-primary" onclick="processPlusMinusMal()">Fertig</button>
+                </form>
+
+                <button class="button button-secondary">
+                    <a href="../Spiele/wahlSpieler/plusMinusMal.html"> Abbrechen </a>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuer Spieler</title>
+
+    <link rel="stylesheet" href="../03_Styles/mainStylesheet.css">
+    <script src="../04_JavaScript/main.js" defer></script>
+    
+</head>
+<body onload="setUpAddPlayer()">
+    <header class="content-header">
+        <nav>
+            <a href="../02_Views/index.html"> <img src="../01_Assets/02_Icons/chevron-left.svg" alt="chevron left" width="30"> </a>
+            <a href="#"> <img src="../01_Assets/02_Icons/list.svg" alt="Menu" width="30"></a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img id="avatarImg" src="../01_Assets/01_Avatare/1.png" alt="Avatar" width="150">
+                </div>
+            </div>
+            
+            <h2>
+                Neuer Spieler
+            </h2>
+            <h1>
+                Wie heißt du?
+            </h1>
+
+            <div>
+                <form onsubmit="return false">
+                    <label for="spielername"></label>
+                    <input type="text" name="spielername" id="spielername" placeholder="Spielername" required>
+                    <div class="placeholder-m"></div>
+                    <button type="submit" class="button button-primary" onclick="addPlayer()">Hinzufügen</button>
+                    <button type="submit" class="button button-secondary">Spiel starten <a href="./spielStarten.html"> </a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

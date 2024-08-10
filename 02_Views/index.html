@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../03_Styles/mainStylesheet.css">
+    <script src="../04_JavaScript/main.js" defer></script>
+
+</head>
+<body onload="setUpHome()">
+    <header>
+        <img src="../01_Assets/04_Img/HeaderImg.png" alt="Header Image" class="headerImg">
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <h1>Willkommen</h1>
+
+        <div>
+            <div class="start-menu">
+                <!-- Neuen Spieler anlegen -->
+                <a href="./neuerSpieler.html" id="neuenSpielerAnlegenButton">
+                    <img class="icon icon-m" alt="plus">
+                    <p>Spieler hinzufügen</p>
+                </a>
+    
+                <!-- Spiel starten:
+                Erst möglich, wenn bereits Spieler angelegt wurden -->
+                <a href="./spielStarten.html" id="spielStartenButton">
+                    <img class="icon icon-m" alt="arrow right short">
+                    <p>Spiel starten</p>
+                </a>
+    
+                <!-- Highscore anzeigen:
+                Erst möglich, wenn bereits Spieler angelegt wurden -->
+                <a href="./highscore.html" id="highscoreButton">
+                    <img class="icon icon-m" alt="person disabled"></img>
+                    <p>Highscore</p>
+                </a>
+
+                <div class="placeholder-m"></div>
+                <!-- Alle Daten löschen -->
+                <button class="button button-secondary" onclick="resetAll()">Daten löschen</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
